@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.icon {
+       width: 30px; height: 30px;
+       vertical-align: -0.15em;
+       fill: currentColor;
+       overflow: hidden;
+    }
+.tool2{
+    position: fixed;
+    left: 1px;
+    top: 220px;
+    width: 28px;
+}
+.pen:hover, .eraser:hover{
+    background-color: #bee2e7;
+    border-radius: 3px
+}
+.using{
+    background-color: #bee2e7;
+}
+.tool1{
+    position: fixed;
+    left: 1px;
+}
+.pen2{
+    display: block;
+}
+.colorcase{
+    width: 50px;
+    position: fixed;
+    left: 1px;
+    top: 105px;
+}
+.clearfix > li{
+    list-style-type: none;
+    float: left;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.color{
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+}
+/* .save, .bin{
+    position: fixed;
+    left: 1px;
+    top: 295px;
+}
+.bin{
+    top: 330px;
+} */

@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <link href="style.css" rel="stylesheet"></style>
     <title>小画板</title>
 </head>
 <body>
     <div class="tool">
-        <!-- <div id="pens" class="tool1">  
-            <svg class="icon" aria-hidden="true">
+        <div id="pens" class="tool1">  
+            <!-- <svg class="icon" aria-hidden="true">
                 <use xlink:href="#icon-bitong"></use>
-            </svg>
-            <div id="pencil" class="pen">
+            </svg> -->
+            <div id="pencil" class="pen using">
                 <svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-qianbi2"></use>
                 </svg>
@@ -27,47 +29,44 @@
                     <use xlink:href="#icon-makebi"></use>
                 </svg>
             </div>
-        </div> -->
-        <div id="eraser" class="tool2">
-            <svg class="icon" aria-hidden="true">
-                <use xlink:href="#icon-xiangpi"></use>
-            </svg>
         </div>
+        <div class="colorcase">
+            <ul class="clearfix" id="colorcase">
+                <li class="color" id="pink" style="background-color:pink"></li>
+                <li class="color" id="evan" style="background-color:#bee2e7"></li>
+                <li class="color" id="lightseagreen" style="background-color:lightseagreen"></li>
+                <li class="color" id="yellow" style="background-color:yellow"></li>
+                <li class="color" id="orange" style="background-color:orange"></li>
+                <li class="color" id="red" style="background-color:red"></li>
+                <li class="color" id="green" style="background-color:green"></li>
+                <li class="color" id="blue" style="background-color:blue"></li>
+                <li class="color" id="purple" style="background-color:purple"></li>
+                <li class="color" id="black" style="background-color:black"></li>
+            </ul>
+        </div>
+        <div class="tool2">
+            <ul class="clearfix">
+                <li id="eraser" class="eraser">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-xiangpi"></use>
+                </svg>
+            </li>
+            <li class="save" id="save">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-save"></use>
+                </svg>
+            </li>
+            <li class="bin" id="bin">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-delete"></use>
+                </svg>
+            </li>
+        </ul>
+        
+    </div>
     </div>
     <canvas id="demo" style="display:block;"></canvas>
 </body>
 </html>
-<style>
-*{
-    margin: 0;
-    padding: 0;
-}
-.icon {
-       width: 28px; height: 28px;
-       vertical-align: -0.15em;
-       fill: currentColor;
-       overflow: hidden;
-    }
-.tool2{
-    position: fixed;
-    left: 1px;
-    top: 160px;
-}
-.tool2:hover{
-    background-color: #bee2e7;
-    width: 32px;
-    height: 33px;
-    border-radius: 3px
-}
-.using{
-    background-color: #bee2e7;
-}
-.pem{
-    display: none;
-}
-.pen2{
-    display: block;
-}
-</style>
 <script src="script.js"></script>
-<script src="https://at.alicdn.com/t/font_1057524_7ea0rwqrkox.js"></script>
+<script src="https://at.alicdn.com/t/font_1057524_9cr05dke10r.js"></script>
