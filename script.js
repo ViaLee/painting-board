@@ -27,6 +27,7 @@ touchEvent()
 //---------touch事件---------- 
 function touchEvent () {
     demo.ontouchstart = function (x){
+        x.preventDefault();
         var getX = x.touches[0].clientX
         var getY = x.touches[0].clientY
         ifdown = true
