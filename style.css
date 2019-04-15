@@ -11,7 +11,7 @@
 .tool2{
     position: fixed;
     left: 1px;
-    top: 220px;
+    top: 270px;
     width: 28px;
 }
 .pen:hover, .eraser:hover{
@@ -29,7 +29,7 @@
     display: block;
 }
 .colorcase{
-    width: 50px;
+    width: 60px;
     position: fixed;
     left: 1px;
     top: 105px;
@@ -46,6 +46,7 @@
 .color{
     width: 20px;
     height: 20px;
+    margin: 5px;
     box-sizing: border-box;
 }
 /* .save, .bin{
